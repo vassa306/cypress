@@ -5,7 +5,8 @@ describe("Test Contact US via Store", ()=>{
 
 
     let firstname = 'vasek';
-    it('submission via contact us form', () => {
+    
+    it('Send data via contact us form', () => {
         cy.visit("/");
         cy.get("a[href$='contact']").click();
         cy.url().should('eq','/index.php?rt=content/contact')
